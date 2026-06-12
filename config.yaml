@@ -1,0 +1,36 @@
+# Dataset
+dataset: "GSE189133"
+
+# Metadados
+metadata:
+  title: "FAM193A KO + Nutlin in CHP212 neuroblastoma cells"
+  organism: "human"
+  cell_line: "CHP212"
+  description: "RNA-seq of CHP212 neuroblastoma cells with FAM193A knockout and Nutlin treatment"
+  pmid: "36897777"
+
+# URLs do genoma (Ensembl GRCh38)
+genome:
+  fasta: "https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/cdna/Homo_sapiens.GRCh38.cdna.fa.gz"
+  gtf: "https://ftp.ensembl.org/pub/release-110/gtf/homo_sapiens/Homo_sapiens.GRCh38.110.gtf.gz"
+
+# Design experimental fatorial 2x2
+design: "~ fam193a * nutlin"
+
+# Contrastes
+contrasts:
+  - ["KO", "WT"]
+  - ["nutlin", "control"]
+  - ["KO_nutlin", "WT_control"]
+
+# OrgDb
+orgdb: "org.Hs.eg.db"
+
+# Recursos
+resources:
+  salmon:
+    mem: "8G"
+    time: "02:00:00"
+  deseq2:
+    mem: "16G"
+    time: "04:00:00"
