@@ -1,0 +1,22 @@
+# Dados brutos (muito grandes)
+data/raw/*.fastq.gz
+data/raw/*.fastq
+data/raw/wget-log*
+data/raw/*_converted.fastq
+
+# Referência (pode ser baixada novamente)
+reference/transcriptome.fa.gz
+reference/salmon_index/
+
+# Arquivos temporários
+*.rds
+www.ebi.ac.uk/
+
+# Logs
+*.log
+
+# Arquivos auxiliares do Salmon (desnecessários)
+results/salmon/*/aux_info/
+results/salmon/*/libParams/
+results/salmon/*/lib_format_counts.json
+results/salmon/*/cmd_info.json

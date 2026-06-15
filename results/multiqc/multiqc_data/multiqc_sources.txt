@@ -1,0 +1,17 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR16975746	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975746_fastqc.zip
+FastQC	all_sections	SRR16975747	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975747_fastqc.zip
+FastQC	all_sections	SRR16975748	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975748_fastqc.zip
+FastQC	all_sections	SRR16975749	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975749_fastqc.zip
+FastQC	all_sections	SRR16975750	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975750_fastqc.zip
+FastQC	all_sections	SRR16975751	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975751_fastqc.zip
+FastQC	all_sections	SRR16975752	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975752_fastqc.zip
+FastQC	all_sections	SRR16975753	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975753_fastqc.zip
+FastQC	all_sections	SRR16975754	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975754_fastqc.zip
+FastQC	all_sections	SRR16975755	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975755_fastqc.zip
+FastQC	all_sections	SRR16975756	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975756_fastqc.zip
+FastQC	all_sections	SRR16975757	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975757_fastqc.zip
+FastQC	all_sections	SRR16975758	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975758_fastqc.zip
+FastQC	all_sections	SRR16975759	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975759_fastqc.zip
+FastQC	all_sections	SRR16975760	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975760_fastqc.zip
+FastQC	all_sections	SRR16975761	/mnt/data/homes/izabelaborgens/RIB0305---GSE189133/results/fastqc/SRR16975761_fastqc.zip
