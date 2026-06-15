@@ -1,15 +1,18 @@
 library(DESeq2)
 library(ggplot2)
 library(pheatmap)
-library(readr)
 
-# Ler dados
+# Ler counts e samples
 counts <- read.csv("results/deseq2/counts.csv", row.names=1)
-samples <- read.table("samples.tsv", header=TRUE, sep="\t")
+counts <- round(counts)
 
-# Criar objeto DESeq2
+samples <- read.table("samples.tsv", header=TRUE, sep="\t")
+rownames(samples) <- samples$sample_id
+samples <- samples[colnames(counts), ]
+
+# DESeq2
 dds <- DESeqDataSetFromMatrix(
-  countData = round(counts),
+  countData = counts,
   colData = samples,
   design = ~ fam193a * nutlin
 )
@@ -21,7 +24,7 @@ dds <- dds[rowSums(counts(dds)) >= 10, ]
 dds <- DESeq(dds)
 
 # Resultados
-res <- results(dds, alpha = 0.05)
+res <- results(dds, alpha=0.05)
 res_df <- as.data.frame(res)
 write.csv(res_df, "results/deseq2/contrast_results.csv")
 
@@ -47,7 +50,9 @@ plotMA(res)
 dev.off()
 
 # Heatmap top 50 genes
-top50 <- head(order(res_df$padj), 50)
+top50 <- head(order(res_df$padj, na.last=TRUE), 50)
 pheatmap(assay(vsd)[top50,],
          annotation_col=as.data.frame(colData(dds)[,c("fam193a","nutlin")]),
          filename="results/deseq2/heatmap.png")
+
+cat("DESeq2 concluído!\n")
