@@ -1,0 +1,13 @@
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - r-base=4.6.0
+  - bioconductor-tximport
+  - bioconductor-deseq2
+  - bioconductor-topgo
+  - bioconductor-org.hs.eg.db
+  - r-ggplot2
+  - r-pheatmap
+  - r-readr
